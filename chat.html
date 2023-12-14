@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellbook/Chat</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="side-menu">
+                <i class="fa-solid fa-bars" id="left-menu-opener"></i>
+                <a href="index.html"><span id="name">SellBook</span></a>
+            </div>
+            <div id="left-menu">
+                <i class="fa-solid fa-x" id="left-menu-closer"></i>
+                <a href="index.html"><span class="index">Index</span></a>
+                <div id="contents">
+                    <div>
+                        <a href="buy.html">
+                            <p class="link">Buy</p>
+                        </a>
+                        <a href="sell.html">
+                            <p class="link">Sell</p>
+                        </a>
+                        <a href="chat.html">
+                            <p class="link">Chat</p>
+                        </a>
+                        <p class="link">Our partners</p>
+                        <p class="link">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="log-in-button">
+            <div class="button-slide slide-right">SIGN IN</div>
+        </div>
+        <div id="text">
+            <div id="head">
+                <p>Chat with other readers!</p>
+                <p>You will have to enter your username and the message</p>
+                <p>Please be kind with the rest of users!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10">
+                <div class="box">
+                    <div id="chat-form">
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="message-sender" name="message-sender" placeholder="Sender">
+                            <label for="message-sender" class="form-label">Username:</label>
+                        </div>
+                        <div class="form-floating mb-3 mt-3">
+                            <input type="text" class="form-control" id="message-text" name="message-text" placeholder="Message text">
+                            <label for="message-text" class="form-label">Message:</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="box">
+                    <div id="messages-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="credits">
+            <p class="text">Support</p>
+            <p class="mail">support.us@sellbook.com</p>
+            <p class="mail">support.eu@sellbook.com</p>
+        </div>
+        <div id="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div id="socials">
+            <p class="text">Socials</p>
+            <a class="social-links">
+                <i class="fa-brands fa-instagram fa-2xs"></i>
+                <i class="fa-brands fa-x-twitter fa-2xs"></i>
+                <i class="fa-brands fa-whatsapp fa-2xs"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/62463d218d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/sellbook-chat.js"></script>
+    <script src="js/left-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #060817;
+}
+
+.button-slide {
+    margin-top: 0.5em;
+    margin-left: 22em;
+    color: #FFF;
+    border: 1px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 9px 18px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide-right:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+#side-menu {
+    position: fixed;
+    width: 50px;
+    height: 100%;
+    background-color: #151725;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    justify-content: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-family: "Lucida Console", Monaco, monospace;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 125%;
+    color: white;
+}
+
+#name:hover {
+    cursor: pointer;
+    color: #D80286;
+}
+
+#left-menu-opener {
+    margin-top: 0.5em;
+    font-size: 150%;
+    color: #8b868c;
+}
+
+#left-menu-opener:hover {
+    cursor: pointer;
+    color: #D80286
+}
+
+#left-menu {
+    left: -50.5vw;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+    border: 1px solid #D80286;
+}
+
+#left-menu-closer {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: white;
+}
+
+#left-menu-closer:hover {
+    cursor: pointer;
+    color: #D80286;
+}
+
+.index {
+    margin-left: 1em;
+    color: #3391ed;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.index:hover {
+    cursor: pointer;
+    color:#D80286;
+}
+
+#contents {
+    margin-left: 4em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: small;
+}
+
+#contents:hover {
+    cursor: pointer;
+}
+
+.link {
+    margin-top: 0.5em;
+}
+
+.link:hover {
+    color: #D80286;
+}
+
+.left-menu-open {
+    transition: transform 1s;
+    transform: translateX(50vw);
+}
+
+.left-menu-close {
+    transition: transform 1s;
+    transform: translateX(0vw);
+}
+
+#head {
+    margin-top: -1.3em;
+    margin-left: 4em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+#main {
+    margin-top: 1.5em;
+    margin-left: 5em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: small;
+}
+
+.categories {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin-top: 1em;
+    margin-left: 4em;
+    border: 1px solid black;
+    width: 28vw;
+    border-radius: 0px;
+    display: inline-block;
+    box-shadow: inset 0 0 0 0 black;
+    cursor: pointer;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.image-container:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .partners {
+    color: white;
+} */
+
+
+footer {
+    margin-top: 1em;
+    margin-left: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D80286;
+}
+
+#logo {
+    /* width: 30vw; */
+    height: 80%;
+    visibility: hidden;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+#credits {
+    margin-left: 1em;
+}
+
+#socials {
+    margin-right: 1em;
+}
+
+.text {
+    margin-bottom: 0.3em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: xx-small;
+    text-align: center;
+}
+
+.mail {
+    margin-bottom: 0.3em;
+    color: white;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: xx-small;
+    text-align: center;
+}
+
+.mail:hover {
+    color: #D80286;
+    cursor: pointer;
+}
+
+.social-links {
+    color: white
+}
+
+.social-links i:hover {
+    color: #D80286;
+    cursor: pointer;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #left-menu {
+        width: 25vw;
+    }
+
+    .button-slide {
+        margin-left: 87vw;
+    }
+
+    .image-container {
+        width: 20vw;
+    }
+
+    footer {
+        height: 75px;
+    }
+
+    #logo {
+        height: 70%;
+        visibility: visible;
+    }
+
+    .text {
+        font-size: 100%;
+    }
+
+    #socials {
+        margin-right: 2em;
+    }
+
+    .social-links {
+        font-size: 150%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #side-menu {
+        width: 70px;
+    }
+
+    #name {
+        font-size: x-large;
+    }
+
+    #left-menu {
+        left: -50vw;
+    }
+
+    #left-menu-opener {
+        margin-top: 0.5em;
+        font-size: 200%;
+    }
+
+    #head {
+        font-size: x-large;
+    }
+
+    #main {
+        font-size: larger;
+    }
+
+    .index {
+        font-size: x-large;
+        margin-left: 0.5em;
+    }
+
+    #contents {
+        font-size: larger;
+        margin-left: 2.5em;
+    }
+
+    .button-slide {
+        margin-right: 1em;
+        border: 2px solid rgb(216, 2, 134);
+        border-radius: 0px;
+        padding: 18px 36px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    #logo {
+        visibility: visible;
+    }
+
+    #credits {
+        margin-left: 2em;
+    }
+
+    .text {
+        font-size: larger;
+    }
+
+    .mail {
+        font-size: larger;
+    }
+
+    .social-links {
+        font-size: 210%;
+    }
+}
